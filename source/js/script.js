@@ -165,13 +165,15 @@ const getRealPath = (pathname, desc = false) => {
     $container.removeClass('mobile-nav-on');
   });
 
-
-  const rootRealPath = getRealPath(window.location.pathname, true);
+  let fullURL = window.location.href;
+  let desiredPart = fullURL.substring(25);
+  console.log(desiredPart);
   for (let link of $('.sidebar-menu-link-wrap')) {
     let linkPath = $(link).find("a")[0].getAttribute("href");
-    if (linkPath && getRealPath(linkPath, true) === rootRealPath) {
+    console.log(linkPath)
+    if (linkPath && linkPath === desiredPart) {
       link.className = "sidebar-menu-link-wrap link-active";
-    }
+      } 
   }
 
    // lazysizes

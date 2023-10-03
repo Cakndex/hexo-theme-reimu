@@ -1,4 +1,6 @@
+---
 title: Hello World
+cover: https://d-sketon.top/img/backimg/bg1.jpg
 date: 2013-12-24 17:49:32
 tags:
 ---

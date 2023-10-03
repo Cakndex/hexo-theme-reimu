@@ -25,6 +25,7 @@ hexo.on('generateAfter', () => {
     })
     res.on('end', () => {
       try {
+        if(JSON.parse(result).tag_name){
         const latest = JSON.parse(result).tag_name.replace('v', '').split('.')
         const current = version.split('.')
         let isOutdated = false
@@ -40,7 +41,7 @@ hexo.on('generateAfter', () => {
         if (isOutdated) {
           hexo.log.warn(`Your hexo-theme-reimu is outdated. Current version: v${current.join('.')}, latest version: v${latest.join('.')}`)
           hexo.log.warn('Visit https://github.com/D-Sketon/hexo-theme-reimu/releases for more information.')
-        }
+        }}
       } catch (err) {
         hexo.log.error('Failed to detect version info. Error message:')
         hexo.log.error(err)

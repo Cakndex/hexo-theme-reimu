@@ -1,17 +1,17 @@
 # main menu navigation
 menu:
-  home: /
-  archives: /archives
-  about: /about
-  friend: /friend
+  主页: /
+  归档: /archives/
+  关于: /about/
+  友链: /friend/
 
-banner: "/images/banner.jpg" # themes/reimu/source/images/banner.jpg
+banner: "https://cdn.jsdelivr.net/gh/Cakndex/blog-imgs/banner.jpg" # themes/reimu/source/images/banner.jpg
 # You can also write it in the form of the following url
 # banner: "https://example.com"
 favicon: "/images/favicon.ico" # themes/reimu/source/images/favicon.ico
 # You can also write it in the form of the following url
 # favicon: "https://example.com"
-avatar: "avatar.jpg" # source/_data/avatar/avatar.jpg
+avatar: "https://cdn.jsdelivr.net/gh/Cakndex/blog-imgs/person.jpg" # source/_data/avatar/avatar.jpg
 
 # Content
 excerpt_link: Read More
@@ -184,7 +184,7 @@ vendor:
 
 preloader:
   enable: true
-  text: 少女祈祷中...
+  text: 稍等一下...
   # text: Loading...
 
 animation:
